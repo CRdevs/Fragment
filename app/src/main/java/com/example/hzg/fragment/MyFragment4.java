@@ -27,7 +27,7 @@ public class MyFragment4 extends Fragment {
         View view = inflater.inflate(R.layout.fragment3, container, false);
          tv = (TextView) view.findViewById(R.id.text);
         tv.setText("第二个Fragment（MyFragment4）");
-        Log.i("Main", "Fragment---onCreateView()");
+        Log.i("Main", "Fragment4---onCreateView()");
         return view;
     }
     /**
@@ -37,7 +37,7 @@ public class MyFragment4 extends Fragment {
     public void onAttach(Activity activity) {
         // TODO Auto-generated method stub
         super.onAttach(activity);
-        Log.i("Main", "当Fragment被添加到Activity时候会回调-onAttach()");
+        Log.i("Main", "Fragment4:当Fragment被添加到Activity时候会回调-onAttach()");
 
     }
     /**
@@ -47,7 +47,7 @@ public class MyFragment4 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        Log.i("Main", "创建Fragment时会回调-onCreate()");
+        Log.i("Main", "Fragment4:创建Fragment时会回调-onCreate()");
 
     }
     /**
@@ -57,7 +57,7 @@ public class MyFragment4 extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onActivityCreated(savedInstanceState);
-        Log.i("Main", "Fragment所在的Activty启动完成后调用-onActivityCreated()");
+        Log.i("Main", "Fragment4:Fragment所在的Activty启动完成后调用-onActivityCreated()");
 
     }
     /**
@@ -68,7 +68,7 @@ public class MyFragment4 extends Fragment {
     public void onStart() {
         // TODO Auto-generated method stub
         super.onStart();
-        Log.i("Main", "启动Fragment-Fragment1---onStart()");
+        Log.i("Main", "Fragment4:启动Fragment-Fragment1---onStart()");
 
     }
     /**
@@ -78,7 +78,7 @@ public class MyFragment4 extends Fragment {
     public void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
-        Log.i("Main", "恢复Fragment时会被回调-onResume()");
+        Log.i("Main", "Fragment4:恢复Fragment时会被回调-onResume()");
 
     }
     /**
@@ -88,7 +88,7 @@ public class MyFragment4 extends Fragment {
     public void onPause() {
         // TODO Auto-generated method stub
         super.onPause();
-        Log.i("Main", "暂停Fragment-onPause()");
+        Log.i("Main", "Fragment4:暂停Fragment-onPause()");
 
     }
     /**
@@ -98,7 +98,7 @@ public class MyFragment4 extends Fragment {
     public void onStop() {
         // TODO Auto-generated method stub
         super.onStop();
-        Log.i("Main", "停止Fragment-onStop()");
+        Log.i("Main", "Fragment4:停止Fragment-onStop()");
 
     }
     /**
@@ -108,7 +108,7 @@ public class MyFragment4 extends Fragment {
     public void onDestroyView() {
         // TODO Auto-generated method stub
         super.onDestroyView();
-        Log.i("Main", "销毁Fragment所包含的View组件时-onDestroyView()");
+        Log.i("Main", "Fragment4:销毁Fragment所包含的View组件时-onDestroyView()");
 
     }
     /**
@@ -118,7 +118,7 @@ public class MyFragment4 extends Fragment {
     public void onDestroy() {
         // TODO Auto-generated method stub
         super.onDestroy();
-        Log.i("Main", "销毁Fragment时会被回调-onDestroy()");
+        Log.i("Main", "Fragment4:销毁Fragment时会被回调-onDestroy()");
 
     }
     /**
@@ -128,7 +128,7 @@ public class MyFragment4 extends Fragment {
     public void onDetach() {
         // TODO Auto-generated method stub
         super.onDetach();
-        Log.i("Main", "Fragment从Activity中删除时会回调-onDetach()");
+        Log.i("Main", "Fragment4:Fragment从Activity中删除时会回调-onDetach()");
     }
 
 }

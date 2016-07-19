@@ -36,6 +36,7 @@ public class MyFragment2 extends Fragment{
         Button button = (Button) view.findViewById(R.id.button);
         text.setText("动态加载Fragment");
         button.setText("获取内容");
+        setAaa("aaa");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
