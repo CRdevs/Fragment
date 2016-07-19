@@ -14,6 +14,14 @@ import android.widget.Toast;
  */
 public class MyFragment extends Fragment{
 
+    private String aaa;
+    public String getAaa(){
+        return aaa;
+    }
+
+    public void setAaa(String aaa) {
+        this.aaa=aaa;
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -26,19 +34,17 @@ public class MyFragment extends Fragment{
          */
         View view = inflater.inflate(R.layout.fragment, container, false);
         TextView text=(TextView) view.findViewById(R.id.text);
-//        Button button=(Button) view.findViewById(R.id.button);
+        Button button = (Button) view.findViewById(R.id.button);
         text.setText("静态加载Fragment(MyFragment)");
-//        button.setText("获取内容");
-//        button.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                // TODO Auto-generated method stub
-//                String value = getAaa();
-//                Toast.makeText(getActivity(), "value="+value, Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        button.setText("获取内容");
+        setAaa("aaa");
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String value = getAaa();
+                Toast.makeText(getActivity(), "value=" + value, Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
-
 }

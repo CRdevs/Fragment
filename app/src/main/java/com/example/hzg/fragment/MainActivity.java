@@ -35,9 +35,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             }
             case R.id.second: {
                 MyFragment2 myFragment2=new MyFragment2();
+                //获取管理者
                 FragmentManager fragmentManager=getFragmentManager();
+                //开启一个事务
                 FragmentTransaction beginTransaction=fragmentManager.beginTransaction();
                 beginTransaction.add(R.id.frame, myFragment2);
+                //允许用户通过按下BACK按键返回到前一个Fragment状态
                 beginTransaction.addToBackStack(null);
                 beginTransaction.commit();
                 break;
